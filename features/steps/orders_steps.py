@@ -58,10 +58,6 @@ def step_impl(context):
 # When Steps
 # ****************************************
 
-@when('I visit the "Home Page"')
-def step_impl(context):
-    context.driver.get(context.base_url)
-
 @when('I set the "{field}" to "{value}"')
 def step_impl(context, field, value):
     field_map = {
